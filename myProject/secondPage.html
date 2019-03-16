@@ -1,0 +1,121 @@
+
+  <html>
+   <head>
+       <title></title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" type="text/css" href="style2.css">
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+       <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+       <meta name="google-signin-client_id" content="266201199417-qbpg65d1j5ho0k1g9h8j7kttj0t4v40n.apps.googleusercontent.com">
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       <script type="text/javascript" src="script.js"></script>
+   </head>
+   <body>
+        <div class="main-box">
+            <div class="box">
+                <h2>Create post</h2>
+    
+            <form> 
+                
+                <p id='name' class='got-name'></p>
+                <img src='img/plush-design-studio-483666-unsplash.jpg' id='pic' class='img-circle' width='100' height='100'>
+                
+                <textarea class='text-in' name='message' type='text' placeholder='write something here..'></textarea><br>
+                
+                <input id='userName' type='hidden' name='name' value='Anonymous'>
+                
+                <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+                
+                <button type='submit' name='commentSubmit' class='btn2'>POST</button>
+                
+                <p class='note'><strong>NOTE:</strong> You Have to Sign-in with Google in order to View all the post created by others. </p>
+                
+                <div class='g-signin2' data-onsuccess='onSignIn'></div>
+                
+                <button id='sign-out' onclick='signOut()' class='btn1'>sign out</button>
+            </form>
+    
+         </div>   
+       </div>
+            
+            <!--<div class="data">
+            <p>Profile</p>
+            <img src="img/plush-design-studio-483666-unsplash.jpg" id="pic" class="img-circle" width="100" height="100">
+            <p>Email Address</p>
+            <p id="email" class="alert alert-danger"></p>-->
+            
+            
+            <div class="timeline">
+                <ul>
+                    <li>
+                        <div class="content">
+                            <h3>
+                                What is this?
+                            </h3>
+                            <p>
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>
+                                January 2015
+                            </h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                            <h3>
+                                What is this?
+                            </h3>
+                            <p>
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>
+                                January 2015
+                            </h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                            <h3>
+                                What is this?
+                            </h3>
+                            <p>
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>
+                                January 2015
+                            </h4>
+                        </div>
+                    </li>
+                    
+                    <li>
+                        <div class="content">
+                            <h3>
+                                What is this?
+                            </h3>
+                            <p>
+                               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
+                            </p>
+                        </div>
+                        <div class="time">
+                            <h4>
+                                January 2015
+                            </h4>
+                        </div>
+                    </li>
+                    <div style="clear: both;"></div>
+                </ul>
+            </div>
+          
+       
+   </body>
+</html>
