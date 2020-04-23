@@ -24,32 +24,35 @@ function signOut()
 
 
  function post() {
-    var list = document.getElementById('content-list').innerHTML;
+
     var name = document.getElementById('name').innerText;
-    var content = document.getElementById('post-content').value;
-    document.getElementById('post-content').value = '';
-    var today = new Date();
-    var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-
-    list += `
-        <li>
-            <div class="content">
-                <h3>
-                    ${name}
-                </h3>
-                <p>
-                    ${content}
-                </p>
-            </div>
-            <div class="time">
-                <h4>
-                    ${date}
-                </h4>
-            </div>
-        </li>
-        <div style="clear: both;"></div>
-    `;
-    document.getElementById('content-list').innerHTML = list;
-
-
+    if (name) {
+        var list = document.getElementById('content-list').innerHTML;
+        var content = document.getElementById('post-content').value;
+        document.getElementById('post-content').value = '';
+        var today = new Date();
+        var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+    
+        list += `
+            <li>
+                <div class="content">
+                    <h3>
+                        ${name}
+                    </h3>
+                    <p>
+                        ${content}
+                    </p>
+                </div>
+                <div class="time">
+                    <h4>
+                        ${date}
+                    </h4>
+                </div>
+            </li>
+            <div style="clear: both;"></div>
+        `;
+        document.getElementById('content-list').innerHTML = list;
+    } else {
+        alert("You Have to login first!!");
+    }
  }
