@@ -25,9 +25,9 @@ function signOut()
 
  function post() {
     var list = document.getElementById('content-list').innerHTML;
-    var name = document.getElementById('name').value;
+    var name = document.getElementById('name').innerText;
     var content = document.getElementById('post-content').value;
-
+    document.getElementById('post-content').value = '';
     var today = new Date();
     var date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
 
@@ -50,4 +50,6 @@ function signOut()
         <div style="clear: both;"></div>
     `;
     document.getElementById('content-list').innerHTML = list;
+
+
  }
